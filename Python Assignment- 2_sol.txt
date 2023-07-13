@@ -1,0 +1,241 @@
+ Python Assignment- 2
+
+1.What are the two values of the Boolean data type? How do you write them?
+
+Ans: The Boolean data type represents a logical value that can have one of two possible states: true or false.
+      The Boolean values as: True , False
+
+     eg:- x = 5
+          y = 10
+          print(bool(x==y))
+
+    Output:- False
+
+  Eg:- x = 'GeeksforGeeks'
+       print(bool(x))
+
+  Output:- True
+
+2. What are the three different types of Boolean operators?
+
+Ans: The three different types of Boolean operators:-
+     1. OR 
+     2. AND
+     3. NOT
+
+   1. OR:- The OR operator returns true if at least one of the operands is true; otherwise, it returns false. It is typically represented 
+           by the symbol "||" or the keyword "OR". 
+
+   Operand 1	Operand 2	Result
+   true	        true	        true
+   true	        false	        true
+   false	true	        true
+   false	false	        false
+
+2. AND:- The AND operator returns true if both operands are true; otherwise, it returns false. It is typically represented by the symbol
+         "&&" or the keyword "AND".
+
+   
+   Operand 1	Operand 2	Result
+   true	        true	        true
+   true	        false	        false
+   false	true	        false
+   false	false	        false
+
+3. NOT:- The NOT operator is a unary operator that negates the boolean value of its operand. If the operand is true, the NOT operator returns
+         false, and if the operand is false, it returns true. It is typically represented by the symbol "!" or the keyword "NOT".
+
+   Operand	Result
+   true	        false
+   false	true
+
+ 4. What are the values of the following expressions?
+(5 > 4) and (3 == 5)
+not (5 > 4)
+(5 > 4) or (3 == 5)
+not ((5 > 4) or (3 == 5))
+(True and True) and (True == False)
+(not False) or (not True)
+
+Ans: Evaluate the given expressions:
+
+1.(5 > 4) and (3 == 5):-
+
+The first part, 5 > 4, is true.
+The second part, 3 == 5, is false.
+The overall expression evaluates to false because both parts of the AND operator need to be true for the entire expression to be true.
+
+2.not (5 > 4):-
+
+The expression 5 > 4 is true.
+The "not" operator negates the value, so the overall expression evaluates to false.
+
+3.(5 > 4) or (3 == 5):-
+
+The first part, 5 > 4, is true.
+The second part, 3 == 5, is false.
+The overall expression evaluates to true because only one part of the OR operator needs to be true for the entire expression to be true.
+
+4.not ((5 > 4) or (3 == 5):-
+
+The inner expression, (5 > 4) or (3 == 5), evaluates to true because one of the parts is true.
+The "not" operator negates the value, so the overall expression evaluates to false.
+
+5.(True and True) and (True == False)
+
+The first part, True and True, is true because both parts are true.
+The second part, True == False, is false because True is not equal to False.
+The overall expression evaluates to false because both parts of the AND operator need to be true for the entire expression to be true.
+
+6.(not False) or (not True)
+
+The first part, not False, is true because it negates the value of False.
+The second part, not True, is false because it negates the value of True.
+The overall expression evaluates to true because only one part of the OR operator needs to be true for the entire expression to be true.
+
+
+5. What are the six comparison operators?
+
+Ans: The six comparison operators are:-
+
+  
+The six comparison operators are:
+
+1.Equal to (==): This operator checks if two values are equal and returns true if they are, and false otherwise. For example, 5 == 5 would evaluate to true.
+
+2.Not equal to (!=): This operator checks if two values are not equal and returns true if they are not, and false if they are equal. For example, 5 != 3 would evaluate to true.
+
+3.Greater than (>): This operator checks if the value on the left is greater than the value on the right and returns true if it is, and false otherwise. For example, 5 > 3 would evaluate to true.
+
+4.Less than (<): This operator checks if the value on the left is less than the value on the right and returns true if it is, and false otherwise. For example, 3 < 5 would evaluate to true.
+
+5.Greater than or equal to (>=): This operator checks if the value on the left is greater than or equal to the value on the right and returns true if it is, and false otherwise. For example, 5 >= 5 would evaluate to true.
+
+6.Less than or equal to (<=): This operator checks if the value on the left is less than or equal to the value on the right and returns true if it is, and false otherwise. For example, 3 <= 5 would evaluate to true.
+
+6. How do you tell the difference between the equal to and assignment operators?Describe a
+   condition and when you would use one.
+
+Ans: The difference between the equal to and assignment operators:-
+
+a)Equal to (==) operator: The equal to operator is used for comparison. It checks whether two values are equal and returns true if they are, 
+  and false otherwise. It is commonly used in conditional statements and logical expressions to determine the equality of values.
+
+Eg:- x = 5
+     y = 7
+     if x == y:
+      print("x is equal to y")
+
+b)Assignment (=) operator: The assignment operator is used to assign a value to a variable. It assigns the value on the right-hand side to the 
+  variable on the left-hand side. It does not compare the values for equality. 
+
+Eg:- x = 5
+     y = x + 2
+
+8.Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints
+  Greetings! if anything else is stored in spam.
+
+Ans: spam = 1  # Change the value of spam to test different cases
+
+    if spam == 1:
+      print("Hello")
+    elif spam == 2:
+      print("Howdy")
+    else:
+      print("Greetings!")
+
+   In this code, the variable spam is checked against different values using conditional statements. If spam is equal to 1, it prints "Hello".
+   If spam is equal to 2, it prints "Howdy". Otherwise, if none of the previous conditions are met, it prints "Greetings!". You can modify the 
+   value of spam to test different cases and see the corresponding output.
+
+9.If your programme is stuck in an endless loop, what keys you’ll press?
+
+Ans: a)Ctrl + C: This is a commonly used key combination to send an interrupt signal to the program. It is effective in most command-line 
+       interfaces and text-based programs. 
+
+     b)Ctrl + Break: On some systems or IDEs, such as Windows Command Prompt or some integrated development environments (IDEs) like PyCharm,
+       Ctrl + Break can be used to interrupt or stop the execution of a program.
+
+     c)Ctrl + : This key combination can be used on Unix-based systems (e.g., Linux or macOS) to send a "quit" signal to the program,
+       causing it to terminate.
+
+10.How can you tell the difference between break and continue?
+
+Ans: 1. Break statement:-
+        The break statement is used to terminate the current loop immediately and move the control to the next statement after the loop.
+        When encountered, the break statement exits the loop entirely, regardless of any remaining iterations.
+
+    Eg:- for i in range(1, 6):
+          if i == 3:
+            break
+          print(i)
+
+     2.continue statement:
+       The continue statement is used to skip the current iteration of a loop and move to the next iteration.
+       When encountered, the continue statement immediately jumps to the next iteration of the loop, ignoring any remaining code within
+       the loop for the current iteration.
+
+    Eg:- for i in range(1, 6):
+         if i == 3:
+           continue
+         print(i)
+
+11. In a for loop, what is the difference between range(10), range(0, 10), and range(0, 10, 1)?
+
+ Ans: 1.Range(10): In this case, only the stop argument is provided. It generates a sequence of numbers starting from 0 
+        (which is the default start value) up to, but not including, the stop value of 10. The step value is implicitly considered as 1. 
+        So, range(10) will produce numbers from 0 to 9.
+       
+      Eg:- for i in range(10):
+           print(i)
+
+      2. Range(0, 10): Here, both the start and stop arguments are specified explicitly. It generates a sequence of numbers starting from the 
+         provided start value of 0 and continues up to, but not including, the stop value of 10. Again, the step value is implicitly considered as 1. 
+         The range will produce numbers from 0 to 9,same as in the previous example.
+
+     Eg:- for i in range(0, 10):
+          print(i)
+
+12. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent
+    program that prints the numbers 1 to 10 using a while loop.
+
+Ans:Using a for loop:-
+    for i in range(1, 11):
+      print(i)
+
+   Using a while loop:-
+   i = 1
+   while i <= 10:
+    print(i)
+    i += 1
+
+   Programs will produce the same output, printing the numbers 1 to 10. The for loop iterates over the range from 1 to 11 (excluding 11), 
+   while the while loop keeps printing the value of i as long as it is less than or equal to 10, incrementing i by 1 in each iteration.
+
+13. If you had a function named bacon() inside a module named spam, how would you call it after
+    importing spam?
+ 
+ Ans: After importing the spam module, you can call the bacon() function by using the dot notation to access the function through the module name.
+      Eg:- import spam
+           spam.bacon()
+
+     In this example, the spam module is imported using the import statement. To call the bacon() function from the spam module, 
+     we use the syntax - spam.bacon(). This tells Python to access the bacon() function within the spam module and execute it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
